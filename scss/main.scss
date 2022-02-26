@@ -1,0 +1,31 @@
+//*****************************************************
+//*   MAIN SCSS
+//*****************************************************
+
+@import './base/reset', './abstracts/mixins', './abstracts/variables';
+@import './pages/home', './pages/about', './pages/projects', './pages/contact';
+@import './components/nav', './components/footer', './components/responsive';
+
+//! Fontawesome Library
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+body {
+  font-family: $font-family;
+  line-height: 1;
+  color: $text-color;
+  background-color: $primary-color;
+  height: 100vh;
+}
+
+//* Links
+a {
+  text-decoration: none;
+  color: $text-color;
+}
+
+//* Headings
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
